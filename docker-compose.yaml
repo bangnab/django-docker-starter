@@ -9,7 +9,7 @@ services:
       - POSTGRES_PASSWORD=postgres
   web:
     build: .
-    command: python /app/reko/manage.py runserver 0.0.0.0:8000
+    command: python /app/django-starter/manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/app
     ports:
